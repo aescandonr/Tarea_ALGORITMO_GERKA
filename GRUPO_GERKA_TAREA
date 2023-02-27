@@ -1,5 +1,4 @@
 class Ejercicio1{
-    
     numeros(){
         console.warn("GRUPO GERKA")
         console.warn("1 Presentar la suma de dos valores si el primero es el mayor")
@@ -11,8 +10,6 @@ class Ejercicio1{
             console.log("EL PRIMER NUMER NO ES EL MAYOR POR LO TANTO NO SE REALIZAN OPERACIONES")
         }
     }
-
-
     operaciones(){
         console.warn("2 Realizar una operacion segun el operador(+,-,*,/,%) realizar la suma, resta, multiplicacion, division y reciduo")
         let num1=40 , num2=20
@@ -30,8 +27,6 @@ class Ejercicio1{
         residuo: ${num1} % ${num2} = ${residuo}
         `)
     }
-
-
     numeromayor(){
         console.warn("3 Presentar el mayor de dos numeros")
         let num1=80 , num2=120
@@ -43,15 +38,11 @@ class Ejercicio1{
             console.log("El segundo numero es mas grande", num2 , ">", num1 )
         }
     }
-
-
     nombre(){
         console.warn("4 Dado un nombre presentarlo")
         let nombre="RONNY"
         console.log ("El nombre del arreglo es", nombre)
     }
-
-
     iva(){
         console.warn("5 Dado un valor de compra presentar el total considerando un 12% de iva")
         let num1=150, num2=0.12 , preciototal=0 , iba=1
@@ -59,20 +50,14 @@ class Ejercicio1{
          preciototal=num1+iba
         console.log ("El precio del producto es", num1, "dolares, mas el interes del 12% el precio final es", preciototal)
     }
-
-
     repet(){
         console.warn("6 Presentar 5 veces un nombre")
         let nombre = "RONNY"
         let c=1
         for(c=1;c<6;c++){
             console.log(nombre)
-        }
-        
+        }  
     }
-    
-
-
     mult(){
         console.warn("7 Presentar los numeros multiplos de 3 del 3 al 21")
         let c=3
@@ -82,8 +67,6 @@ class Ejercicio1{
             }
         }
     }
-
-
     tlum(){
         console.warn("8 Presentar los numeros multiplos de 3 del 21 al 3")
          let c=21
@@ -93,8 +76,6 @@ class Ejercicio1{
             }
         }
     }
-
-
     nombresiguales(){
         console.warn("9 Dados dos nombres indicar si son iguales o diferentes")
         let nombre1="ronny" 
@@ -107,9 +88,6 @@ class Ejercicio1{
         }
             
     }
-    
-
-
     cincoc(){
         console.warn("10 Dado diez numeros en un arreglo presentar los que tengan menos de 5 caracteres")
         console.log("array=[456786,22,56,78,123456,898976,19,986754,34214132,99,123")
@@ -123,15 +101,11 @@ class Ejercicio1{
          
         }
     }
-
-
     present(){
         console.warn("11 Dado un arreglo presentar sus elementos")
         const array=[123,567,78,89]
         console.log (`Los valores del arreglo son ${array}`)
     }
-
-
     menoresadiez(){
         console.warn("12 Dado un arreglo de numeros presentar los menores a 10")
         console.log("los valores del arreglo son [20,67,9,8,54]")
@@ -143,10 +117,7 @@ class Ejercicio1{
             console.log(numero)
         }
       }
-
     }
-
-
     pareim(){
         console.warn("13 Dado un arreglo de numeros presentar los impares y al final la suma de los pares")
         console.log("los valores del arreglo son: [23,56,12,10,5,12] ")
@@ -162,10 +133,7 @@ class Ejercicio1{
             }
         }
         console.log(`La suma de los pares es: ${suma}`)
-
     }
-
-
     pmf(){
         console.warn("14 Presentar el primero el medio y el ultimo valor de un arreglo")
         const array =[12,56,75,123,67,90,87,89]
@@ -173,10 +141,7 @@ class Ejercicio1{
          let segun=array[Math.floor(array.length/2)]
          let final= array[array.length-1]
         console.log(`el primer valor es ${primern} el de en medio es ${segun} el final es ${final}`)
-
     }
-
-
     vuelto(){
         console.warn ("15 Calcular el vuelto de un a compra dado el costo y el pago")
         let pago=120.67 , dinero=180 , vuelto=0
@@ -189,9 +154,7 @@ class Ejercicio1{
         for (let i=1; i<=12 ; i++){
             mult=nummul*i
             console.log(`${nummul} * ${i} = ${mult} `)
-
-        }
-        
+        }  
     }
     multisuma(){
         console.warn("17 Realizar la multiplicacion de dos numeros por medio de sumas sucesivas")
@@ -201,10 +164,8 @@ class Ejercicio1{
         while(c<=num2){
             acum=acum+num1
             c=c+1
-            console.log(acum)
-             
+            console.log(acum)        
         }       
-
       }
       diviresta(num1=8,num2=2){
         console.warn("18 Realizar la division de dos numeros por medio de restas sucesivas")
@@ -214,8 +175,8 @@ class Ejercicio1{
             num1=num1-num2
             c=c+1 
         }
-  console.log(`El cociente es = ${c}`)
-  console.log(`El residuo = ${num1}`)
+        console.log(`El cociente es = ${c}`)
+        console.log(`El residuo = ${num1}`)
     }
     factoriales(num1=Math.floor(Math.random()*10)){
         console.warn("19 Calcular el factorial de un numero")
@@ -234,9 +195,7 @@ class Ejercicio1{
         for (let i=0 ; i<exponente;i++){
             r=r*base
         }
-        console.log(`el numero ${3} elevado al exponente ${exponente} es = ${r}   `)
-
-        
+        console.log(`el numero ${3} elevado al exponente ${exponente} es = ${r}   `)    
     }
     fibonacci(){
         console.warn("21 Calcular la serie de fibonacci dado un numero")
@@ -250,7 +209,6 @@ class Ejercicio1{
             cont=cont +1
         }
     }
-    
     invertirnum(){
         console.warn(`22 Dado un numero colocar su inverso`)
         let numero=Math.floor(Math.random()*1000)
@@ -282,13 +240,13 @@ class Ejercicio1{
             console.log(`El numero ${num1} no es un numero perfecto`)
         }
       }
-      primo(){
+    primo(){
         console.warn("25 Verfificar si un numero es primo o no(Primo cuando solo es divsivible para 1 y el propio numero, es decir no tenga divisores)")
         let c,cont=0
         let num1=Math.floor(Math.random()*10)
         for(c=1;c<=num1;c++){
             if(num1%c==0){
-                    cont=cont+1
+                cont=cont+1
             }
         }
         if(cont==2){
@@ -296,12 +254,8 @@ class Ejercicio1{
         }else{
             console.log(`El numero ${num1} no es primo`)
         }
-      }
+    }
 }
-
-    
-
-
 let opcion=new Ejercicio1()
 opcion.numeros()
 opcion.operaciones()
