@@ -1,0 +1,330 @@
+class Ejercicio1{
+    
+    numeros(){
+        console.warn("GRUPO GERKA")
+        console.warn("1 Presentar la suma de dos valores si el primero es el mayor")
+       let  num1=40 , num2=23
+       console.log(num1,num2)
+        if(num1>num2){
+            console.log("EL PRIMER NUMERO ES EL MAYOR, LA SUMA DE LOS VALORES ES:", num1+num2)
+        }else{
+            console.log("EL PRIMER NUMER NO ES EL MAYOR POR LO TANTO NO SE REALIZAN OPERACIONES")
+        }
+    }
+
+
+    operaciones(){
+        console.warn("2 Realizar una operacion segun el operador(+,-,*,/,%) realizar la suma, resta, multiplicacion, division y reciduo")
+        let num1=40 , num2=20
+        let suma=0 , resta=0 , multiplicacion=0 , division=0 , residuo=0
+        suma=num1+num2
+        resta=num1-num2
+        multiplicacion=num1*num2
+        division=num1/num2
+        residuo=num1%num2
+        console.log(`
+        suma: ${num1} + ${num2} = ${suma}
+        resta: ${num1} - ${num2} = ${resta}
+        multiplicacion: ${num1} * ${num2} = ${multiplicacion}
+        division: ${num1} / ${num2} = ${division}
+        residuo: ${num1} % ${num2} = ${residuo}
+        `)
+    }
+
+
+    numeromayor(){
+        console.warn("3 Presentar el mayor de dos numeros")
+        let num1=80 , num2=120
+        console.log(`los valores son ${num1} y ${num2}`)
+        if(num1>num2){
+            console.log("El primer numero es mas grande", num1, ">" ,num2)
+        }
+        else{
+            console.log("El segundo numero es mas grande", num2 , ">", num1 )
+        }
+    }
+
+
+    nombre(){
+        console.warn("4 Dado un nombre presentarlo")
+        let nombre="RONNY"
+        console.log ("El nombre del arreglo es", nombre)
+    }
+
+
+    iva(){
+        console.warn("5 Dado un valor de compra presentar el total considerando un 12% de iva")
+        let num1=150, num2=0.12 , preciototal=0 , iba=1
+         iba=num1*num2
+         preciototal=num1+iba
+        console.log ("El precio del producto es", num1, "dolares, mas el interes del 12% el precio final es", preciototal)
+    }
+
+
+    repet(){
+        console.warn("6 Presentar 5 veces un nombre")
+        let nombre = "RONNY"
+        let c=1
+        for(c=1;c<6;c++){
+            console.log(nombre)
+        }
+        
+    }
+    
+
+
+    mult(){
+        console.warn("7 Presentar los numeros multiplos de 3 del 3 al 21")
+        let c=3
+        for(c=3;c<22;c++){
+            if( c % 3 == 0 ){
+                console.log(c, "es multiplo de 3")
+            }
+        }
+    }
+
+
+    tlum(){
+        console.warn("8 Presentar los numeros multiplos de 3 del 21 al 3")
+         let c=21
+        for(c=21;c>2;c=c-3){
+            if (c % 3 == 0){
+                console.log(c , "es multiplo de 3")
+            }
+        }
+    }
+
+
+    nombresiguales(){
+        console.warn("9 Dados dos nombres indicar si son iguales o diferentes")
+        let nombre1="ronny" 
+        let nombre2="ROnnY"
+        if(nombre1.toLowerCase() == nombre2.toLowerCase()){
+            console.log(`los nombres ingresados ${nombre1} y ${nombre2} son iguales`)
+        }
+        else{
+            console.log(`los nombres ingresados ${nombre1} y ${nombre2} son distintos`)
+        }
+            
+    }
+    
+
+
+    cincoc(){
+        console.warn("10 Dado diez numeros en un arreglo presentar los que tengan menos de 5 caracteres")
+        console.log("array=[456786,22,56,78,123456,898976,19,986754,34214132,99,123")
+        console.log("los numeros del arreglo que tienen menos de 5 cifras: ")
+        const array=[456786,22,56,78,123456,898976,19,986754,34214132,99,123]
+        for (let i=0 ; i<array.length ;i++){
+            const numero=array[i]
+            if(numero.toString().length<5){
+                console.log(numero)
+            }
+         
+        }
+    }
+
+
+    present(){
+        console.warn("11 Dado un arreglo presentar sus elementos")
+        const array=[123,567,78,89]
+        console.log (`Los valores del arreglo son ${array}`)
+    }
+
+
+    menoresadiez(){
+        console.warn("12 Dado un arreglo de numeros presentar los menores a 10")
+        console.log("los valores del arreglo son [20,67,9,8,54]")
+        console.log("los valores del arreglo menores a 10 son: ")
+        const array = [20,67,9,8,54]
+        for (let i=0;i<array.length;i++){
+        const numero  = array [i]
+        if(numero.toString()<10){
+            console.log(numero)
+        }
+      }
+
+    }
+
+
+    pareim(){
+        console.warn("13 Dado un arreglo de numeros presentar los impares y al final la suma de los pares")
+        console.log("los valores del arreglo son: [23,56,12,10,5,12] ")
+        console.log("los valores imapares son: ")
+        const array = [23,56,12,10,5,12]
+        let suma = 0
+        for(let i=0 ; i<array.length ; i++){
+            const numero=array[i]
+            if(numero %2 != 0){
+                console.log(numero)
+            }else{
+                suma=suma+numero
+            }
+        }
+        console.log(`La suma de los pares es: ${suma}`)
+
+    }
+
+
+    pmf(){
+        console.warn("14 Presentar el primero el medio y el ultimo valor de un arreglo")
+        const array =[12,56,75,123,67,90,87,89]
+         let primern = array[0]
+         let segun=array[Math.floor(array.length/2)]
+         let final= array[array.length-1]
+        console.log(`el primer valor es ${primern} el de en medio es ${segun} el final es ${final}`)
+
+    }
+
+
+    vuelto(){
+        console.warn ("15 Calcular el vuelto de un a compra dado el costo y el pago")
+        let pago=120.67 , dinero=180 , vuelto=0
+        vuelto=dinero-pago
+        console.log(`El usuario a ingresado $${dinero} y el valor del producto es $${pago} por lo tanto su vuelto es $${vuelto}`)
+    }
+    tablamul(){
+        console.warn("16 Presentar la tabla de multiplicar de cualquier numero del 1 al 12")
+        let nummul=Math.floor(Math.random()*10),mult=0
+        for (let i=1; i<=12 ; i++){
+            mult=nummul*i
+            console.log(`${nummul} * ${i} = ${mult} `)
+
+        }
+        
+    }
+    multisuma(){
+        console.warn("17 Realizar la multiplicacion de dos numeros por medio de sumas sucesivas")
+        let num1=10 , num2=5
+        console.log(`${num1} * ${num2}`)
+        let acum=0,c=1
+        while(c<=num2){
+            acum=acum+num1
+            c=c+1
+            console.log(acum)
+             
+        }       
+
+      }
+      diviresta(num1=8,num2=2){
+        console.warn("18 Realizar la division de dos numeros por medio de restas sucesivas")
+        console.log(`${num1} / ${num2}`)
+        let c=0
+        while(num1>=num2){
+            num1=num1-num2
+            c=c+1 
+        }
+  console.log(`El cociente es = ${c}`)
+  console.log(`El residuo = ${num1}`)
+    }
+    factoriales(num1=Math.floor(Math.random()*10)){
+        console.warn("19 Calcular el factorial de un numero")
+        let factorial=1,x=1
+            while(x<=num1){
+                factorial=factorial*x
+                x=x+1
+            }
+            console.log(`Los factoriales del numero <${num1}> = ${factorial}`)
+    }
+    exponente(){
+        console.warn("20 Calcular el exponente de un numero")
+        const base=Math.floor(Math.random()*10)
+        const exponente=Math.floor(Math.random()*10)
+        let r=1
+        for (let i=0 ; i<exponente;i++){
+            r=r*base
+        }
+        console.log(`el numero ${3} elevado al exponente ${exponente} es = ${r}   `)
+
+        
+    }
+    fibonacci(){
+        console.warn("21 Calcular la serie de fibonacci dado un numero")
+        let a=0,b=1,c=1,cont=3,n = Math.floor(Math.random()*10)
+        n= Math.floor(Math.random()*10)
+        console.log
+        console.log(a,b,c)
+        while (cont < n){
+            a=b;b=c;c = a+b
+            console.log(c)
+            cont=cont +1
+        }
+    }
+    
+    invertirnum(){
+        console.warn(`22 Dado un numero colocar su inverso`)
+        let numero=Math.floor(Math.random()*1000)
+        let convertAndReverse= numero.toString().split("").reverse().join("")
+        numero=convertAndReverse
+        console.log(numero)
+    }
+    divisores(num1=Math.floor(Math.random()*10)){
+        console.warn(`23) Presentar los divisores de un numero`)
+        let c
+        console.log(`Divisores del ${num1}:`)
+        for(c=1;c<num1;c++){
+            if(num1%c==0){
+                console.log(`El numero ${c} es divisor`)
+            }
+        }
+    }
+    perfect(){
+        console.warn("24) Presentar si un numero es perfecto o no (Perfecto:cuando la suma de los divisores incluidos el 1 y excluido el propio numero dada igual al numero)")
+        let c,sumanum1=0
+        let num1=Math.floor(Math.random()*10)
+        for(c=1;c<num1;c++){
+            if(num1%c==0){
+                sumanum1=sumanum1+c
+            }
+        }if(sumanum1==num1){
+            console.log(`El numero ${num1} es un numero perfecto`)
+        }else{
+            console.log(`El numero ${num1} no es un numero perfecto`)
+        }
+      }
+      primo(){
+        console.warn("25 Verfificar si un numero es primo o no(Primo cuando solo es divsivible para 1 y el propio numero, es decir no tenga divisores)")
+        let c,cont=0
+        let num1=Math.floor(Math.random()*10)
+        for(c=1;c<=num1;c++){
+            if(num1%c==0){
+                    cont=cont+1
+            }
+        }
+        if(cont==2){
+            console.log(`El numero ${num1} es primo`)
+        }else{
+            console.log(`El numero ${num1} no es primo`)
+        }
+      }
+}
+
+    
+
+
+let opcion=new Ejercicio1()
+opcion.numeros()
+opcion.operaciones()
+opcion.numeromayor()
+opcion.nombre()
+opcion.iva()
+opcion.repet()
+opcion.mult()
+opcion.tlum()
+opcion.nombresiguales()
+opcion.cincoc ()
+opcion.present()
+opcion.menoresadiez()
+opcion.pareim()
+opcion.pmf()
+opcion.vuelto()
+opcion.tablamul()
+opcion.multisuma()
+opcion.diviresta()
+opcion.factoriales()
+opcion.exponente()
+opcion.invertirnum()
+opcion.fibonacci()
+opcion.divisores()
+opcion.perfect()
+opcion.primo()
