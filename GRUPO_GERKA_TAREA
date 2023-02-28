@@ -195,12 +195,11 @@ class Ejercicio1{
         for (let i=0 ; i<exponente;i++){
             r=r*base
         }
-        console.log(`el numero ${3} elevado al exponente ${exponente} es = ${r}   `)    
+        console.log(`el numero ${base} elevado al exponente ${exponente} es = ${r}   `)    
     }
     fibonacci(){
         console.warn("21 Calcular la serie de fibonacci dado un numero")
-        let a=0,b=1,c=1,cont=3,n = Math.floor(Math.random()*10)
-        n= Math.floor(Math.random()*10)
+        let a=0,b=1,c=1,cont=3,n=Math.floor(Math.random()*10)
         console.log
         console.log(a,b,c)
         while (cont < n){
